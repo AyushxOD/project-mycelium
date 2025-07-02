@@ -1,0 +1,18 @@
+# General
+.DS_Store
+*.log
+*.env
+
+# Node / React App (in the 'app' folder)
+/app/node_modules
+/app/build
+/app/dist
+npm-debug.log
+yarn-error.log
+
+# Rust / Wasm-Pack (in the 'packages/core' folder)
+/packages/core/target
+/packages/core/pkg
+
+# Editor specific
+.vscode/
