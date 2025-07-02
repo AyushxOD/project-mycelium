@@ -218,3 +218,157 @@ h3 {
   color: #00ff41;
   /* Green for received messages */
 }
+
+
+
+/* General Layout & Theme */
+#root {
+  width: 100%;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #00ff41;
+  margin: 0;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+h1,
+h3,
+h4 {
+  text-shadow: 0 0 5px #00ff41;
+}
+
+h4 {
+  margin: 0.5em 0;
+  font-weight: normal;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 2em auto;
+  border: 1px solid #00ff41;
+  padding: 2em;
+  box-shadow: inset 0 0 15px #00ff41;
+}
+
+/* Button & Form Styles */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5em;
+}
+
+button {
+  background: #00ff41;
+  color: #0a0a0a;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  flex: 1;
+  font-family: 'Courier New', monospace;
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  box-shadow: 0 0 10px #00ff41;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #333;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.p2p-form {
+  display: flex;
+  gap: 10px;
+  margin: 1.5em 0;
+}
+
+.p2p-form input {
+  flex-grow: 1;
+  background: #111;
+  border: 1px solid #00ff4166;
+  color: #00ff41;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+}
+
+/* Connection Popups */
+.popup {
+  border: 1px solid #ffff00;
+  background: #ffff001a;
+  padding: 1em;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0 0 1em 0;
+}
+
+/* Secure Messaging */
+.messaging-container {
+  margin-top: 2em;
+  border-top: 1px solid #00ff4166;
+  padding-top: 1em;
+}
+
+.messaging-container textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #111;
+  border: 1px solid #00ff4166;
+  color: #00ff41;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+  min-height: 80px;
+  margin-bottom: 10px;
+}
+
+.message-history {
+  background: #111;
+  padding: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid #00ff4166;
+  margin-top: 10px;
+}
+
+.message {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #00ff4133;
+  margin-bottom: 5px;
+}
+
+.message.sent {
+  color: #00ffff;
+  /* Cyan for sent messages */
+}
+
+.message.received {
+  color: #00ff41;
+  /* Green for received messages */
+}
+
+/* System Log */
+#log {
+  background: #111;
+  padding: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #00ff4166;
+  margin-top: 1em;
+}
