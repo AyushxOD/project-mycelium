@@ -1,0 +1,138 @@
+/* app/src/App.css */
+body {
+  font-family: 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #00ff41;
+  margin: 0;
+  padding: 2em;
+}
+
+h1,
+h3 {
+  text-shadow: 0 0 5px #00ff41;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid #00ff41;
+  padding: 2em;
+  box-shadow: inset 0 0 15px #00ff41;
+}
+
+#drop-zone {
+  border: 2px dashed #333;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: .3s;
+  color: #777;
+}
+
+#drop-zone.active {
+  border-color: #00ff41;
+  color: #00ff41;
+}
+
+#drop-zone.dragover {
+  background: #00ff4133;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: #00ff41;
+  color: #0a0a0a;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  flex: 1;
+  font-family: 'Courier New', monospace;
+}
+
+button:disabled {
+  background: #333;
+  color: #777;
+  cursor: not-allowed;
+}
+
+pre {
+  background: #111;
+  padding: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #00ff4166;
+}
+
+.shard {
+  background: #1a1a1a;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: .8em;
+  word-break: break-all;
+}
+
+h3 {
+  margin-top: 2em;
+}
+
+.node-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 10px;
+  border: 1px solid #00ff4133;
+}
+
+.node {
+  border: 1px solid #00ff4188;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.node p {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 0 0 3px #00ff4166;
+}
+
+.node span {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.node.offline {
+  border-color: #f006;
+  background-color: #ff00001a;
+  color: #f009;
+}
+
+.node.offline p {
+  text-shadow: 0 0 3px #f006;
+}
+
+.node-toggle {
+  background: #00000000;
+  color: #00ff41;
+  border: 1px solid #00ff4188;
+  padding: 5px 10px;
+  font-size: .8em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.node.offline .node-toggle {
+  color: #f00;
+  border-color: #f008;
+}
