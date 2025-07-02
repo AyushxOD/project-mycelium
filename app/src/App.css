@@ -1,4 +1,7 @@
 /* app/src/App.css */
+#root {
+  width: 100%;
+}
 body {
   font-family: 'Courier New', monospace;
   background: #0a0a0a;
@@ -13,8 +16,15 @@ h3 {
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
+  /* Use a percentage for the width to make it responsive */
+  width: 90%;
+  /* Set a new, larger max-width for very wide screens */
+  max-width: 1400px;
+
+  /* Keep it centered */
+  margin: 2em auto;
+
+  /* Keep the original styling */
   border: 1px solid #00ff41;
   padding: 2em;
   box-shadow: inset 0 0 15px #00ff41;
