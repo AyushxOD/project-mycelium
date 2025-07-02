@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "mycelium-core": "file:../packages/core/pkg",
+    "peerjs": "^1.5.5",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "mycelium-core": "file:../packages/core/pkg"
-
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
